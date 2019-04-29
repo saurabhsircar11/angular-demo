@@ -1,12 +1,27 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { UsersComponent as UsersContainerComponent } from './containers/users/users.component';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './containers/user/user.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { RouterModule, Routes } from '@angular/router';
 
 describe('AppComponent', () => {
+  const routes: Routes = [
+    { path: 'users', component: UsersContainerComponent },
+    { path: 'user/:id', component: UserComponent },
+    { path: '', redirectTo: '/users', pathMatch: 'full' }
+  ];
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        UsersContainerComponent,
+        UsersComponent,
+        UserComponent,
+        UserDetailsComponent
       ],
+      imports: [RouterModule.forRoot(routes)]
     }).compileComponents();
   }));
 
