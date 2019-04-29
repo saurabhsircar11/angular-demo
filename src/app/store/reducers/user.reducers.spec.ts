@@ -56,8 +56,22 @@ fdescribe('User Reducers', () => {
     });
 
     it('Select User ', () => {
-        expect(userReducers({ users: null, selectedUser: null }, { type: 'default' }))
-
-
+        expect(userReducers({ users: null, selectedUser: null },
+            {
+                type: EUserActions.GetUserSuccess, payload: {
+                    id: 1,
+                    name: 'Luis Suarez',
+                    cardNumber: 'XXXX-XXXX-XXXX-4321',
+                    cardType: 'Visa'
+                }
+            })).toEqual({
+                users: null,
+                selectedUser: {
+                    id: 1,
+                    name: 'Luis Suarez',
+                    cardNumber: 'XXXX-XXXX-XXXX-4321',
+                    cardType: 'Visa'
+                }
+            });
     });
 });
