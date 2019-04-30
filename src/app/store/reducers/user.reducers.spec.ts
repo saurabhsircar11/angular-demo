@@ -1,6 +1,6 @@
 import { EUserActions } from './../actions/user.actions';
 import { userReducers } from './user.reducers';
-fdescribe('User Reducers', () => {
+describe('User Reducers', () => {
     it('Get Users Default', () => {
         expect(userReducers({ users: null, selectedUser: null }, { type: 'default' }))
             .toEqual({ users: null, selectedUser: null });

@@ -13,4 +13,16 @@ describe('Service: Config', () => {
   it('should ...', inject([ConfigService], (service: ConfigService) => {
     expect(service).toBeTruthy();
   }));
+
+
+  it('#getConfig observable value', (done: DoneFn) => {
+    const service: ConfigService = TestBed.get(ConfigService);
+    service.getConfig().subscribe(value => {
+      expect(value).toEqual({
+        adminName: 'El Maestro Tabarez',
+        permission: ['users']
+      });
+      done();
+    });
+  });
 });

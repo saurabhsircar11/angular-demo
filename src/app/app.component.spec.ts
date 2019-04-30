@@ -1,3 +1,6 @@
+import { IAppState } from './store/states/app.state';
+import { appReducers } from './store/reducers/app.reducers';
+import { StoreModule, Store } from '@ngrx/store';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { UsersComponent as UsersContainerComponent } from './containers/users/users.component';
@@ -21,7 +24,7 @@ describe('AppComponent', () => {
         UserComponent,
         UserDetailsComponent
       ],
-      imports: [RouterModule.forRoot(routes)]
+      imports: [RouterModule.forRoot(routes), StoreModule.forRoot(appReducers)]
     }).compileComponents();
   }));
 
@@ -41,6 +44,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-demo!');
+    expect(compiled.querySelector('h1').textContent).toContain('ANGULAR-DEMO');
   });
 });
