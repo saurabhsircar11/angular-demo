@@ -1,6 +1,6 @@
-import { IConfig } from './../../models/config.interface';
+import { IConfig } from '../../models/config.interface';
 import { switchMap } from 'rxjs/operators';
-import { GetConfig, EConfigActions, GetConfigSuccess } from './../actions/config.actions';
+import { GetConfig, EConfigActions, GetConfigSuccess } from '../actions/config.actions';
 import { Injectable } from '@angular/core';
 import { Effect, Actions, ofType } from '@ngrx/effects';
 import { ConfigService } from '../../services/config.service';

@@ -1,5 +1,5 @@
-import { IUser } from './../../models/user.interface';
-import { IUserState } from './../states/user.state';
+import { IUser } from '../../models/user.interface';
+import { IUserState } from '../states/user.state';
 import { selectUserList, selectSelectedUser } from './user.selector';
 
 const userMock: IUser[] = [

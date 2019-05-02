@@ -1,5 +1,5 @@
-import { IUserState } from './../states/user.state';
-import { IAppState } from './../states/app.state';
+import { IUserState } from '../states/user.state';
+import { IAppState } from '../states/app.state';
 import { createSelector } from '@ngrx/store';
 
 

@@ -1,6 +1,6 @@
-import { selectUserList } from './../selectors/user.selector';
-import { IUserHttp } from './../../models/http-models/user-http.interface';
-import { UserService } from './../../services/user.service';
+import { selectUserList } from '../selectors/user.selector';
+import { IUserHttp } from '../../models/http-models/user-http.interface';
+import { UserService } from '../../services/user.service';
 import { IAppState } from '../states/app.state';
 import { Injectable } from '@angular/core';
 import { Effect, ofType, Actions } from '@ngrx/effects';

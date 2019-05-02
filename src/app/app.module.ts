@@ -1,4 +1,4 @@
-import { environment } from './../environments/environment';
+import { environment } from '../environments/environment';
 import { ConfigEffects } from './store/effects/config.effects';
 import { appReducers } from './store/reducers/app.reducers';
 import { BrowserModule } from '@angular/platform-browser';

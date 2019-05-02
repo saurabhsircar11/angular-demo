@@ -1,5 +1,5 @@
-import { GetUsers } from './../../store/actions/user.actions';
-import { selectUserList } from './../../store/selectors/user.selector';
+import { GetUsers } from '../../store/actions/user.actions';
+import { selectUserList } from '../../store/selectors/user.selector';
 import { Component, OnInit } from '@angular/core';
 import { IAppState } from '../../store/states/app.state';
 import { Router } from '@angular/router';

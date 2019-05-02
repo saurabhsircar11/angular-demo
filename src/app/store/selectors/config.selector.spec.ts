@@ -1,5 +1,5 @@
-import { IConfig } from './../../models/config.interface';
-import { IConfigState } from './../states/config.state';
+import { IConfig } from '../../models/config.interface';
+import { IConfigState } from '../states/config.state';
 import { selectConfig } from './config.selectors';
 
 const stateMock: IConfigState = {

@@ -1,4 +1,4 @@
-import { EConfigActions, ConfigActions } from './../actions/config.actions';
+import { EConfigActions, ConfigActions } from '../actions/config.actions';
 import { configReducers } from './config.reducers';
 import { IConfigState } from '../states/config.state';
 

@@ -1,4 +1,4 @@
-import { IUserHttp } from './../models/http-models/user-http.interface';
+import { IUserHttp } from '../models/http-models/user-http.interface';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 declare const require: any;

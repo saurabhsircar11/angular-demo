@@ -1,4 +1,4 @@
-import { IUser } from './../../models/user.interface';
+import { IUser } from '../../models/user.interface';
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';

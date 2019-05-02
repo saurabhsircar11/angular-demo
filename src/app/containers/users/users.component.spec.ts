@@ -1,5 +1,5 @@
-import { IAppState } from './../../store/states/app.state';
-import { appReducers } from './../../store/reducers/app.reducers';
+import { IAppState } from '../../store/states/app.state';
+import { appReducers } from '../../store/reducers/app.reducers';
 import { StoreModule, Store } from '@ngrx/store';
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';

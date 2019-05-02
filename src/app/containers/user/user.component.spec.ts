@@ -1,6 +1,6 @@
 import { Router, RouterModule } from '@angular/router';
-import { appReducers } from './../../store/reducers/app.reducers';
-import { UserDetailsComponent } from './../../components/user-details/user-details.component';
+import { appReducers } from '../../store/reducers/app.reducers';
+import { UserDetailsComponent } from '../../components/user-details/user-details.component';
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';

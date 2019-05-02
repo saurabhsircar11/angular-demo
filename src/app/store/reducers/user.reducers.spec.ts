@@ -1,4 +1,4 @@
-import { EUserActions } from './../actions/user.actions';
+import { EUserActions } from '../actions/user.actions';
 import { userReducers } from './user.reducers';
 describe('User Reducers', () => {
     it('Get Users Default', () => {
